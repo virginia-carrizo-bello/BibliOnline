@@ -1,0 +1,38 @@
+<nav class="barra" >
+    <a class="branding" href="/inicio">BIBLIONLINE</a>
+    <ul class="ul-barra" >
+        <li th:if="${session.usuariosession != null}" >
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/libros/lista" role="button" aria-expanded="false">Libros</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/libro/lista">Ver todos</a></li>
+                <li sec:authorize="hasRole('ADMIN')"><a class="dropdown-item" href="/libro/registrar">Agregar nuevo</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown" th:if="${session.usuariosession != null}"  >
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/autor/lista" role="button" aria-expanded="false">Autores</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/autor/lista">Ver todos</a></li>
+                <li sec:authorize="hasRole('ADMIN')"><a class="dropdown-item" href="/autor/registrar">Agregar nuevo</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown" th:if="${session.usuariosession != null}" >
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="/editorial/lista" role="button" aria-expanded="false">Editoriales</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/editorial/lista">Ver todos</a></li>
+                <li sec:authorize="hasRole('ADMIN')"><a class="dropdown-item" href="/editorial/registrar">Agregar nuevo</a></li>
+            </ul>
+        </li>
+        <li class="nav-item" th:if="${session.usuariosession != null}" >
+            <a class="nav-link" aria-current="page" href="/logout">Cerrar Sesión</a>
+        </li>
+        <li th:if="${session.usuariosession == null}">
+            <a aria-current="page" href="/registrar">Registrarse</a>
+        </li>
+        <li th:if="${session.usuariosession == null}">
+            <a  aria-current="page" href="/login">Iniciar Sesión</a>
+        </li>
+        <li th:if="${session.usuariosession == null}">
+            <a  href="/quienesSomos">Quienes somos?</a>
+        </li>
+    </ul>
+</nav>

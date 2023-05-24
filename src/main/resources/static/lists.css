@@ -1,0 +1,52 @@
+
+.contenido-body{
+    margin: 1.5%;
+    justify-content: flex-start;
+    background-color: #aca08d;
+    height: 430px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.contenedor-tabla{
+    margin-top: 3%;
+    width: 70%;
+    box-shadow: 0px 0px 20px #000000;
+    overflow: auto;
+}
+
+.tabla th, td{
+    width: 5%;
+    border: 1px solid #000;
+
+}
+
+.tabla td {
+    background: #eee;
+    height: 2%;
+}
+.tabla th {
+    background: #eae7d2;
+    text-align: center;
+}
+
+.btn-registro{
+    display: flex;
+    align-self: flex-end;
+    padding-right: 15%;
+}
+
+.btn-registro button{
+    text-decoration: none;
+    background-color: #eae7d2;
+    color: #3a302b;
+    border-radius: 10px;
+}
+.btn-registro a :hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+

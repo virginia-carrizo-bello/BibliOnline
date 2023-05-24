@@ -1,0 +1,63 @@
+.contenido-body-form{
+    display: flex;
+    margin: 20px;
+    background-color: #aca08d;
+    width: 96vw;
+    height: 60vh;
+    padding-top: 50px;
+    align-items: center;
+}
+
+.formulario-ctr{
+    border-radius: 5px;
+    box-shadow: 0px 0px 22px #000000;
+    padding: 25px;
+    margin-left: 490px
+}
+.opciones{
+    padding: 10px;
+    border-bottom: 1px solid #5f5f5f;
+}
+
+.opciones input{
+    width: 250px;
+    border-width: 2px;
+
+}
+.opciones-libro{
+    padding: 10px;
+    border-bottom: 1px solid #5f5f5f;
+}
+
+
+.opciones-libro input, select{
+    width: 250px;
+    border-width: 2px;
+    margin: 5px;
+}
+
+
+.btn-registro{
+    padding: 7px;
+    margin: 24px;
+}
+.btn-registro a{
+    padding: 10px;
+    color: #3a302b;
+    text-decoration: none;
+}
+.btn-subir{
+    padding: 7px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-subir button{
+    padding: 7px;
+    color: #3a302b;
+    text-decoration: none;
+}
+
+.nombre-actual{
+    font-weight:1000;
+}

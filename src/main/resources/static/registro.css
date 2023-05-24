@@ -1,0 +1,40 @@
+.cuerpo{
+    background-color: #aca08d;
+    height: 408px;
+    width: 1326px;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.formulario{
+    border-radius: 5px;
+    box-shadow: 0px 0px 22px #000000;
+    padding: 25px;
+
+}
+.opciones{
+    padding: 10px;
+    border-bottom: 1px solid #5f5f5f;
+}
+
+
+.opciones input{
+    width: 250px;
+    border-width: 2px;
+   
+}
+
+
+.btn-registro{
+    padding: 7px;
+    margin: 24px;
+}
+.btn-registro a{
+    padding: 10px;
+    color: #3a302b;
+    text-decoration: none;
+}
